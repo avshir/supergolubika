@@ -2,3 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3d29d;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #172554;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #172554;
+}
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
+  h1 {
+    @apply text-3xl font-bold text-center sm:text-4xl;
+  }
+  h2 {
+    @apply text-2xl font-bold text-center md:text-3xl;
+  }
+  h3 {
+    @apply text-xl font-semibold md:text-2xl;
+  }
+  h4 {
+    @apply mt-6 text-lg font-semibold md:text-xl;
+  }
+  /* for blog post */
+  h5 {
+    @apply mt-6 font-semibold;
+  }
+  p {
+    @apply mt-4 text-sm lg:text-base font-normal text-gray-600;
+  }
+}
+
+@layer components {
+  .h2-text-span {
+    padding: 0 0 8px 0;
+    background-image: url("./assets/svg/purple-underline.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline;
+    background-position: left calc(100% + 1rem);
+  }
+  .golubika-image-png {
+    background-image: url("./assets/images/png/golubika-2-without_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
