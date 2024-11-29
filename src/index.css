@@ -59,7 +59,7 @@
     background-position: left calc(100% + 1rem);
   }
   .golubika-image-png {
-    background-image: url("./assets/images/png/golubika-2-without_bg.png");
+    background-image: url("./assets/images/png/golubika_2_256.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
