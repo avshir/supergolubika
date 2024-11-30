@@ -6,7 +6,11 @@ import { BgFixedSection } from "../components/sections/BgFixedSection";
 import { BgImgSection } from "../components/sections/BgImgSection";
 // import { BannerSection } from "../components/sections/BannerSection";
 
-import { MarkCloseFillIcon, PointIcon } from "../components/Icons";
+import {
+  MarkCloseFillIcon,
+  PointIcon,
+  UnderlineIcon,
+} from "../components/Icons";
 import {
   bg_main_sreen_golubika_IMG,
   golubika4_1_PNG,
@@ -22,43 +26,35 @@ const address = contacts[0];
 export const HomePage = () => {
   return (
     <ContainerMain className="py-0 sm:py-0 lg:py-0">
-      {/* <section className="h-[80vh] bg-cover bg-no-repeat bg-left-top bg-[url('./assets/images/joanna-kosinska-4qujjbj3srs-unsplash_1920-1282.jpg')]">
-        <Container className="py-20 sm:px-32">
-          <h1 className="text-gray-600 font-semibold max-w-md text-left text-6xl">
-            Cвежая&nbsp;<span className="text-primary">голубика</span>{" "}
-            в&nbsp;Минском районе в семейном хозяйстве
-          </h1>
-        </Container>
-      </section> */}
       <section
         id="main-screen"
-        className="h-[calc(100vh-72px)] relative overflow-hidden flex items-center"
+        className="h-[calc(100vh-72px)] relative overflow-hidden flex items-start pt-16 sm:pt-0 sm:items-center bg-[#E5EAF0]"
       >
-        <div className="absolute -z-10 -right-[80%] md:-right-2/3 lg:-right-1/2 xl:-right-1/3 2xl:right-0 2xl:left-0 top-0">
+        <div className="absolute bottom-0 -right-[30%] -left-[30%] sm:top-0 sm:-right-1/2 md:-right-1/3 lg:-right-1/4 2xl:inset-0">
           <img src={bg_main_sreen_golubika_IMG} alt="ягоды голубики" />
         </div>
-        {/* py-20 sm:px-32 */}
-        <Container>
-          <div className="mb-20 xl:mb-[8rem] 2xl:mb-[20rem]">
-            <h1 className="font-medium max-w-md text-left text-2xl md:text-3xl lg:text-4xl mb-4 relative leading-relaxed">
-              <span className="2xl:hidden">Cвежая&nbsp;</span>
+        <Container className="relative w-auto sm:w-full">
+          <div className="max-w-md mb-20 xl:mb-[8rem] 2xl:mb-[20rem]">
+            <h1 className="font-medium text-center sm:text-left text-2xl md:text-3xl lg:text-4xl mb-4 relative leading-relaxed">
+              <span className="max-sm:hidden xl:hidden">Cвежая&nbsp;</span>
               <span className="h2-text-span text-primary font-semibold text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase relative">
                 голубика
-                {/* <UnderlineIcon className="absolute -left-2 -bottom-5 w-[14rem] fill-green-300" /> */}
               </span>
               <br />
               <span>в&nbsp;Минском районе</span>
             </h1>
-            <ButtonLink color="green" size="xl" href="/contact">
-              Где купить
-            </ButtonLink>
+            <div className="flex justify-center sm:justify-start">
+              <ButtonLink color="green" size="xl" href="/contact">
+                Где купить
+              </ButtonLink>
+            </div>
           </div>
         </Container>
       </section>
       {/* about-section */}
       <BgImgSection bgOverlayColorClassName="bg-accent/85">
         <Container className="max-w-md md:max-w-3xl">
-          <h2>О нас</h2>
+          <h2>О нас </h2>
           <p className="text-primary">
             <span className="text-primary font-semibold text-xl md:text-2xl ">
               SuperGolubika
@@ -193,7 +189,10 @@ export const HomePage = () => {
         <Container>
           <h2 className="text-accent">
             Что говорят покупатели о нашей{" "}
-            <span className="h2-text-span">голубике</span>
+            <span className="relative">
+              голубике{" "}
+              <UnderlineIcon className="absolute left-0 -bottom-5 w-full fill-accent-green" />
+            </span>
           </h2>
           <ul className="pt-4 md:pt-8 lg:pt-12 lg:max-w-5xl mx-auto grid grid-cols-1 gap-8 lg:gap-12 lg:grid-cols-3 ">
             {testimonials &&
