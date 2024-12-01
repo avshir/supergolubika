@@ -10,7 +10,7 @@ import ButtonLink from "../components/ButtonLink";
 import { BgFixedSection } from "../components/sections/BgFixedSection";
 import { BgImgSection } from "../components/sections/BgImgSection";
 import { TestimonialSection } from "../components/sections/TestimonialSection";
-import { WhySection } from "../components/sections/WhySection";
+import { FeaturesSection } from "../components/sections/FeaturesSection";
 // import { BannerSection } from "../components/sections/BannerSection";
 
 import {
@@ -74,7 +74,7 @@ export const HomePage = () => {
           </p>
         </Container>
       </BgImgSection>
-      <WhySection />
+      <FeaturesSection />
       {/* inNumbersFacts-section */}
       <section
         id="inNumbersFacts-section"
