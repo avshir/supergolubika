@@ -9,6 +9,9 @@ import GrowingIcon from "./../../assets/svg/growing-w.svg?react";
 import BlueberryHarvestIcon from "./../../assets/svg/blueberry_harvest.svg?react";
 import MarkCloseFillIcon from "./../../assets/svg/mark-close-fill.svg?react";
 import ArrowLeftIcon from "./../../assets/svg/arrow-left.svg?react";
+import XMarkIcon from "./../../assets/svg/x-mark.svg?react";
+import Bars3Icon from "./../../assets/svg/bars-3.svg?react";
+import LogoIcon from "./../../assets/svg/logo.svg?react";
 
 export {
   EmailIcon,
@@ -22,5 +25,7 @@ export {
   BlueberryHarvestIcon,
   MarkCloseFillIcon,
   ArrowLeftIcon,
+  XMarkIcon,
+  Bars3Icon,
+  LogoIcon,
 };
-
