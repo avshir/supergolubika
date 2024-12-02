@@ -1,4 +1,4 @@
-interface ITestimonial {
+export interface ITestimonial {
   id: number;
   text: string;
   author: string;
