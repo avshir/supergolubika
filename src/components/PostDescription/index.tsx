@@ -1,16 +1,21 @@
+import { forwardRef } from "react";
+import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
 import { InfoPost } from "../InfoPost";
 import { IPost } from "../../constans/posts";
 
-interface PostDescription {
+interface PostDescriptionProps {
   post: IPost;
 }
 
-export const PostDescription = ({ post }: PostDescription) => {
+export const PostDescription = forwardRef<
+  HTMLAnchorElement,
+  PostDescriptionProps
+>(({ post }, ref) => {
   return (
     <Link
-      key={post.id}
+      ref={ref}
       rel="noopener noreferrer"
       to={`/blog/${post.id}`}
       className="max-w-sm w-full mx-auto group hover:no-underline focus:no-underline bg-white rounded-xl hover:shadow-xl transition-shadow"
@@ -32,4 +37,6 @@ export const PostDescription = ({ post }: PostDescription) => {
       </div>
     </Link>
   );
-};
+});
+
+export const MPostDescription = motion(PostDescription);
