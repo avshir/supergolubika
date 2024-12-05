@@ -224,7 +224,7 @@ export const HomePage = () => {
                   className={`fill-primary flex-none ${address.iconSize}`}
                 />
                 <a
-                  href={address.href}
+                  href={address.href[0]}
                   className="hover:text-primary/80 transition-colors"
                 >
                   {address.info}
