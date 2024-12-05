@@ -12,6 +12,7 @@ import ArrowLeftIcon from "./../../assets/svg/arrow-left.svg?react";
 import XMarkIcon from "./../../assets/svg/x-mark.svg?react";
 import Bars3Icon from "./../../assets/svg/bars-3.svg?react";
 import LogoIcon from "./../../assets/svg/logo.svg?react";
+import LoaderIcon from "./../../assets/svg/loader.svg?react";
 
 export {
   EmailIcon,
@@ -28,4 +29,5 @@ export {
   XMarkIcon,
   Bars3Icon,
   LogoIcon,
+  LoaderIcon,
 };

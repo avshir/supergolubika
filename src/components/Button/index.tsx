@@ -1,11 +1,11 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   type?: "button" | "submit" | "reset" | undefined;
-  size: keyof typeof sizes; 
-  color?: keyof typeof colors; 
+  size: keyof typeof sizes;
+  color?: keyof typeof colors;
   className?: string;
 }
 
@@ -24,7 +24,14 @@ const colors = {
   outline: "text-primary hover:text-primary/80",
 };
 
-export default function Button({ color = "primary", size, children, className, type="button", ...props }: ButtonProps) {
+export default function Button({
+  color = "primary",
+  size,
+  children,
+  className,
+  type = "button",
+  ...props
+}: ButtonProps) {
   const colorClasses = colors[color];
   const sizeClasses = sizes[size];
 
@@ -34,6 +41,7 @@ export default function Button({ color = "primary", size, children, className, t
       type={type}
       className={twMerge(
         `rounded-full transition-colors ${sizeClasses} ${colorClasses}`,
+        "disabled:bg-gray-300 disabled:text-gray-600 disabled:hover:text-gray-600",
         className
       )}
       {...props}
