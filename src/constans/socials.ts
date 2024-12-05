@@ -9,12 +9,12 @@ interface ISocial {
 
 export const socials: ISocial[] = [
   {
-    href: "tel:+375297571691",
+    href: "tel:+375291358443",
     title: "Phone",
     icon: PhoneIcon,
   },
   {
-    href: "mailto:yurchachos@gmail.com",
+    href: "mailto:info@supergolubika.by",
     title: "Email",
     icon: EmailIcon,
   },

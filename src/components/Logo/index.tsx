@@ -11,7 +11,7 @@ export const Logo = () => {
         alt="логотип SuperGolubika"
         className="size-14 -ml-2"
       />
-      <span className="text-accent">SuperGolubika</span>
+      <span className="text-accent-green">super</span><span className="text-accent">golubika.by</span>
     </div>
   );
 };

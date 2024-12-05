@@ -9,8 +9,10 @@ export const Footer = () => {
       <Container className="gap-4 flex flex-col justify-center lg:flex-row lg:justify-between items-center">
         <div className="basis-1/3 text-accent-green order-last lg:order-first text-center lg:text-left">
           <span>
-            © {new Date().getFullYear()} SuperGolubika. All rights reserved |
-            with&nbsp;<span className="text-red-600">&#x2764;</span>
+            © {new Date().getFullYear()}{" "}
+            <span className="text-accent-green">super</span>
+            <span className="text-accent">golubika</span>. All rights
+            reserved | with&nbsp;<span className="text-red-600">&#x2764;</span>
             &nbsp;by&nbsp;
           </span>
           <a

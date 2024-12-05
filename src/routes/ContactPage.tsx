@@ -1,6 +1,6 @@
 import { ContainerMain } from "../components/ContainerMain";
 import { Container } from "../components/Container";
-import { contacts } from '../constans/contacts';
+import { contacts } from "../constans/contacts";
 
 import { ContactForm } from "../components/ContactForm";
 
@@ -15,7 +15,9 @@ export const ContactPage = () => {
           <div className="grid max-w-5xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
             <div className="py-6 md:py-0 md:px-6">
               <h1 className="h2-text-span">Контакты</h1>
-              <p className="pt-2 pb-4 ">Сезон ягод июнь - август</p>
+              <p className="pt-2 pb-4 ">
+                Заполните форму для связи или позвоните
+              </p>
               <ul className="space-y-4">
                 {contacts &&
                   contacts.map((contact) => (
@@ -26,12 +28,30 @@ export const ContactPage = () => {
                       <contact.icon
                         className={`fill-primary flex-none ${contact.iconSize}`}
                       />
-                      <a
-                        href={contact.href}
-                        className="hover:text-primary/80 transition-colors"
-                      >
-                        {contact.info}
-                      </a>
+                      {contact.title === "Phone" ? (
+                        <div className="flex flex-wrap">
+                          <a
+                            href={contact.href[0]}
+                            className="hover:text-primary/80 transition-colors"
+                          >
+                            {contact.info[0]}
+                            <span> Наталья,&nbsp;</span>
+                          </a>
+                          <a
+                            href={contact.href[1]}
+                            className="hover:text-primary/80 transition-colors"
+                          >
+                            {contact.info[1]}
+                          </a>
+                        </div>
+                      ) : (
+                        <a
+                          href={contact.href[0]}
+                          className="hover:text-primary/80 transition-colors"
+                        >
+                          {contact.info[0]}
+                        </a>
+                      )}
                     </li>
                   ))}
               </ul>
