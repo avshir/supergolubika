@@ -18,7 +18,6 @@ export default {
     colors: {
       primary: {
         DEFAULT: colors.blue[950],
-        // DEFAULT: "#172554",
       },
       secondary: { ...colors.blue, DEFAULT: colors.blue[300] },
       transparent: "transparent",
@@ -55,7 +54,6 @@ export default {
           DEFAULT: colors.blue[300],
           green: "#A3D29D",
           beige: "#E5CAB3",
-          lavander: colors.blue[300],
         },
       },
     },
