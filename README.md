@@ -99,5 +99,5 @@ http://mail.supergolubika.by
 - https://hoster.by/help/elektronnaya-pochta/osnovnye-nastroyki-pochty/
 - [Программы для доступа к электронной почте](https://hoster.by/help/elektronnaya-pochta/programmy-dlya-dostupa-k-elektronnoy-pochte/) - см. Пример настройки почты hoster.by для мобильного приложения Gmail на Android
 
-![alt text](image-2.png)
+![Инфо для настройки эл.почты](image-2.png)
 ![скрин почтового ящика info@supergolubika.by с собщение из Формы обратной связи](image-1.png)
