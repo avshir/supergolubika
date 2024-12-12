@@ -1,5 +1,5 @@
 # Project: [supergolubika.by](http://supergolubika.by)
-- [Описание проекта в Google Doc](https://docs.google.com/document/d/10nQmqGPJNXcW5_kbkX_pV1O2SomaQHW9-_2c_d399Uo/edit?tab=t.0#heading=h.4raqo2yxsn9p)
+- Описание проекта cм. в Google Doc
 
 ## Use technologies
 - React + Vite + TypeScript
@@ -29,25 +29,19 @@
 - настроена email: info@supergolubika.by
 
 ## TODO
-- зарегить почту info@supergolubika.by
-- форму обратной связи - добавить email Тани
-- обновить логотип (хедер, футер)
 - футер - обновить дизайн меню навигации
 - спрятать assecc email ключ в .env (https://v3.vitejs.ru/guide/env-and-mode.html)
-- удалить TEMP файлы, 
-- дописать и удалить лишнне в /design
-- добавить SSL сертификат для https
+- удалить TEMP файлы
 
 ### Проверить
 
 ### Обновить
-- добавить второй телефон (основной)
 - ссылку на инстраграмм
 - ccылку avshir - на мои контакты
 
 ### Улучшение:
 - добавить контакты на гугл.карты в д.Рогово
-- SEO - ключевые слова онбновить (Рогово, Радошковичи)
+- SEO - ключевые слова онбновить (Рогово, Радашковичи)
 - SEO - добавить Яндекс Метрику, Гугл Аналитику
 - дописать статьи блога (2 без наполнения)
 
@@ -66,7 +60,7 @@
 
 
 ==================================
-### Helpful links
+## Helpful links
 ### Deploy Vite - React - cPanel from hoster.by
 - [Deploy Vite-React-cPanel](https://www.linkedin.com/pulse/simple-guide-deploying-your-vite-react-app-cpanel-shishir-c4esc/)
 - [Как развернуть/разместить ваше приложение React на общем хостинге в cPanel](https://hayhost.am/knowledgebase/263/-How-to-DeployorHost-your-React-App-on-Shared-Hosting-in-cPanel.html?language=russian)
@@ -98,6 +92,3 @@ http://mail.supergolubika.by
 
 - https://hoster.by/help/elektronnaya-pochta/osnovnye-nastroyki-pochty/
 - [Программы для доступа к электронной почте](https://hoster.by/help/elektronnaya-pochta/programmy-dlya-dostupa-k-elektronnoy-pochte/) - см. Пример настройки почты hoster.by для мобильного приложения Gmail на Android
-
-![Инфо для настройки эл.почты](image-2.png)
-![скрин почтового ящика info@supergolubika.by с собщение из Формы обратной связи](image-1.png)
