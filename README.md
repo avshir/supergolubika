@@ -3,6 +3,21 @@ files for project supergolubika.by
 
 [Deploy: supergolubika.by](https://supergolubika.by/)
 
+## Use technologies
+- React + Vite + TypeScript
+- Tailwind CSS
+
+- react-router-dom - v6 for routes
+- vite-plugin-svgr - for using SVG as react components in Vite
+- plugins
+- @headlessui/react - tailwind CSS plugin, for burger-menu
+- tailwind-merge - Utility function to efficiently merge Tailwind CSS classes in JS without style conflicts.
+- motion - plugin Framer motion for animations
+- [mambaui](https://mambaui.com/) - for tailwind CSS
+
+- react-hook-form - for ContactForm
+- web3forms.com (for email info@supergolubika.by) - to send message for Contact Form - free 250 emails/month
+
 ## Home Page
 ![supergolubika-by-05 12 2024_fullscreen](https://github.com/user-attachments/assets/17a52a4c-4065-472e-b29d-fa93a809c893)
 
